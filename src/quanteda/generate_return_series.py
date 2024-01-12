@@ -21,7 +21,7 @@ def generate_return_series(
     annual_volatility : float
         Annualized volatility as a decimal (e.g., 0.2 for 20%).
 
-    length : int, default 365
+    n_rows=365, 
         Number of days, hours, or minutes to generate.
 
     freq : {'D', 'H', 'min'}, default 'D'
