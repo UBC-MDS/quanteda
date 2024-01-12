@@ -4,7 +4,7 @@ import numpy as np
 def generate_return_series(
     expected_annual_return, 
     annual_volatility, 
-    length=365, 
+    n_rows=365, 
     freq='D', 
     num_series=1, 
     dist='normal', 
