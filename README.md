@@ -2,7 +2,7 @@
 
 Perform exploratory data analysis (EDA) on quantitative data.
 
-This package aims to be the starting point for any analysis of financial data by supplying functions to create charts and metrics that simplify  exploratory data analysis and give the user a jump-start on their project. This package simplifies the creation of charts 
+This package aims to be the starting point for any analysis of quantitative financial data by supplying functions that create charts and metrics to simplify  exploratory data analysis and give the user a jump-start on their project. This package simplifies the creation of charts that look at the distribution of numeric features and missing information in the data set; two critical steps in any financial analysis. The package also includes a function that will generate a random time series. Financial variables like stock prices and interest rates vary over time, so this ability to generate a time series quickly is extremely useful. Finally, this package also includes a function that will automatically calculate several useful financial metrics so that more time can be spent on more complicated analysis.
 
 The functions in this package include:
 - `XXX`: Examines missing values in a data set and generates a relevant chart.
@@ -10,7 +10,7 @@ The functions in this package include:
 - `generate_return_series`: Generates a DataFrame with independent time series of returns.
 - `XXX`: Calculates several useful financial metrics to begin analysis with.
 
-Our package fills a gap in the python ecosystem by being marketed specifically to financial data. Python users commonly create EDA charts using popular packages like [matplotlib](https://pypi.org/project/matplotlib/), [altair](https://pypi.org/project/altair/), and [seaborn](https://pypi.org/project/seaborn/). These libraries have a much more general use, and while they create charts that are infinitely customizable, it still takes time to learn the syntax and code to make the charts look exactly as one desires. This can be time consuming during EDA, when the goal is to quickly get a rough idea of what the data set you are using looks like. Our package will simplify these actions into a few functions that will save time on tedious EDA so that more time can be spent on analysis and testing.
+Our package fills a gap in the python ecosystem by being marketed specifically to financial data. Python users commonly create EDA charts using popular packages like [matplotlib](https://pypi.org/project/matplotlib/), [altair](https://pypi.org/project/altair/), and [seaborn](https://pypi.org/project/seaborn/), and conduct their financial analysis using packages like [pandas](https://pypi.org/project/pandas/), [numpy](https://pypi.org/project/numpy/), and [scipy](https://pypi.org/project/SciPy/). These libraries are extensive, but have been generalized to be as useful as possible to as many differen fields as possible. It takes time to learn the syntax and code of these packages that work for financial data. This can be time consuming during EDA, when the goal is to quickly get a rough idea of what the data set you are using looks like. Our package will simplify these actions into a few functions that will save time on tedious EDA so that more time can be spent on analysis and testing.
 
 ## Installation
 
