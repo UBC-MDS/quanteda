@@ -3,7 +3,7 @@ import altair as alt
 
 def plot_num_dist(data):
     """
-    Create a chart of histograms for each numeric feature in a dataset.
+    Creates a chart of histograms for all numeric features in a data set.
 
     Parameters
     ----------
@@ -12,7 +12,7 @@ def plot_num_dist(data):
 
     Returns
     -------
-    self: Chart object
+    self: Altair chart object
         Returns an altair chart object
 
     Examples
@@ -21,3 +21,5 @@ def plot_num_dist(data):
 
     """
     return
+
+
