@@ -2,6 +2,17 @@
 
 Perform exploratory data analysis (EDA) on quantitative data.
 
+This package aims to be the starting point for any analysis of quantitative financial data by supplying functions that create charts and metrics to simplify  exploratory data analysis and give the user a jump-start on their project. This package simplifies the creation of charts that look at the distribution of numeric features and missing information in the data set; two critical steps in any financial analysis. The package also includes a function that will generate a random time series. Financial variables like stock prices and interest rates vary over time, so this ability to generate a time series quickly is extremely useful. Finally, this package also includes a function that will automatically calculate several useful financial metrics so that more time can be spent on more complicated analysis.
+
+The functions in this package include:
+
+- `plot_missing_vals`: Plot tick chart to display missing values for all numeric features in the dataset.
+- `plot_num_dist`: Creates a chart of histograms for all numeric features in a data set.
+- `generate_return_series`: Generates a DataFrame with independent time series of returns.
+- `generate_financial_metrics`: Calculates financial metrics based on a DataFrame of random returns on time series.
+
+Our package fills a gap in the python ecosystem by being marketed specifically to financial data. Python users commonly create EDA charts using popular packages like [matplotlib](https://pypi.org/project/matplotlib/), [altair](https://pypi.org/project/altair/), and [seaborn](https://pypi.org/project/seaborn/), and conduct their financial analysis using packages like [pandas](https://pypi.org/project/pandas/), [numpy](https://pypi.org/project/numpy/), and [scipy](https://pypi.org/project/SciPy/). These libraries are extensive, but have been generalized to be as useful as possible to as many differen fields as possible. It takes time to learn the syntax and code of these packages that work for financial data. This can be time consuming during EDA, when the goal is to quickly get a rough idea of what the data set you are using looks like. Our package will simplify these actions into a few functions that will save time on tedious EDA so that more time can be spent on analysis and testing.
+
 ## Installation
 
 ```bash
