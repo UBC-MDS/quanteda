@@ -5,7 +5,8 @@ Perform exploratory data analysis (EDA) on quantitative data.
 This package aims to be the starting point for any analysis of quantitative financial data by supplying functions that create charts and metrics to simplify  exploratory data analysis and give the user a jump-start on their project. This package simplifies the creation of charts that look at the distribution of numeric features and missing information in the data set; two critical steps in any financial analysis. The package also includes a function that will generate a random time series. Financial variables like stock prices and interest rates vary over time, so this ability to generate a time series quickly is extremely useful. Finally, this package also includes a function that will automatically calculate several useful financial metrics so that more time can be spent on more complicated analysis.
 
 The functions in this package include:
-- `XXX`: Examines missing values in a data set and generates a relevant chart.
+
+- `plot_missing_vals`: Plot tick chart to display missing values for all numeric features in the dataset
 - `plot_num_dist`: Creates a chart of histograms for all numeric features in a data set.
 - `generate_return_series`: Generates a DataFrame with independent time series of returns.
 - `generate_financial_metrics`: Calculates financial metrics based on a DataFrame of random returns on time series.
