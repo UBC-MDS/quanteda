@@ -12,7 +12,7 @@ def plot_missing_vals(df):
 
     Returns
     -------
-    object
+    self: object
         Altair chart object
 
     Examples
