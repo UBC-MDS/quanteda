@@ -1,4 +1,5 @@
 import altair as alt
+import pandas as pd
 
 def plot_missing_vals():
     """
@@ -12,7 +13,11 @@ def plot_missing_vals():
     Returns
     -------
     object
-        alt.Chart
+        Altair chart object
+
+    Examples
+    --------
+    plot_missing_vals(df)
         
     """
 
