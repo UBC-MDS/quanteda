@@ -46,7 +46,7 @@ def generate_return_series(
 
     Examples
     --------
-    >>> generate_return_series(0.05, 0.2, length=3, freq='D', num_series=3, dist='normal', random_state=123, start_date='2024-01-01')
+    >>> generate_return_series(0.05, 0.2, n_rows=3, freq='D', num_series=3, dist='normal', random_state=123, start_date='2024-01-01')
                 series_1  series_2  series_3
     2024-01-01 -0.012345  0.016767  0.022222
     2024-01-02  0.043215  0.019105 -0.005555
