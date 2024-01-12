@@ -22,7 +22,7 @@ def generate_return_series(
         Annualized volatility as a decimal (e.g., 0.2 for 20%).
 
     n_rows=365, 
-        Number of days, hours, or minutes to generate.
+        Number of days, hours, or minutes (rows) to generate.
 
     freq : {'D', 'H', 'min'}, default 'D'
         Frequency of returns ('D' for daily, 'H' for hourly, 'min' for minutely).
