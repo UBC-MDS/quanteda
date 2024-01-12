@@ -26,7 +26,7 @@ def generate_financial_metrics(random_returns_df, annual_risk_free=0.00):
                                                    length=5, 
                                                    num_series=3, 
                                                    dist="normal")
-    >>> result = generate_financial_metrics(random_returns_df, annual_risk_free_rate)
+    >>> generate_financial_metrics(random_returns_df, annual_risk_free_rate=0.02)
               count  avg_return  total_return       vol  sharpe_ratio
     series_1      5    0.000046      0.000229  0.002740     0.015870
     series_2      5    0.002174      0.010870  0.001776     1.222954
