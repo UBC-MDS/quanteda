@@ -1,7 +1,7 @@
 import altair as alt
 import pandas as pd
 
-def plot_missing_vals():
+def plot_missing_vals(df):
     """
     Plot tick chart to display missing values for all numeric features in the dataset.
 
