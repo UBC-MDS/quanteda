@@ -6,7 +6,7 @@ This package aims to be the starting point for any analysis of quantitative fina
 
 The functions in this package include:
 
-- `plot_missing_vals`: Plot tick chart to display missing values for all numeric features in the dataset
+- `plot_missing_vals`: Plot tick chart to display missing values for all numeric features in the dataset.
 - `plot_num_dist`: Creates a chart of histograms for all numeric features in a data set.
 - `generate_return_series`: Generates a DataFrame with independent time series of returns.
 - `generate_financial_metrics`: Calculates financial metrics based on a DataFrame of random returns on time series.
