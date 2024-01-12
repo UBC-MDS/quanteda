@@ -6,6 +6,9 @@ dependencies:
   - ipykernel=6.28
   - ipywidgets=8.1.1
   - python=3.9
+  - numpy=1.26.3
+  - pandas=2.1.4
+  - altair=5.2.0
   - cookiecutter=2.5.0
   - jupyterlab=4.0.9
   - pip==23.3.2
