@@ -9,7 +9,7 @@ def generate_financial_metrics(random_returns_df, annual_risk_free=0.00):
     random_returns_df : pd.DataFrame
         DataFrame containing random return values with a datetime index.
 
-    annual_risk_free : float, default is 0.00.
+    annual_risk_free : float, default 0.00
         Annualized risk-free rate as a decimal (e.g., 0.02 for 2%).
         
     Returns
