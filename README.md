@@ -2,6 +2,16 @@
 
 Perform exploratory data analysis (EDA) on quantitative data.
 
+This package aims to be the starting point for any analysis of financial data by supplying functions to create charts and metrics that simplify  exploratory data analysis and give the user a jump-start on their project. 
+
+The functions in this package include:
+- `XXX`: Examines missing values in a data set and generates a relevant chart
+- `XXX`: Creates histogram charts for all numeric features in a data set
+- `XXX`: X
+- `XXX`: X
+
+Our package fills a gap in the python ecosystem by being marketed specifically to financial data. *Links to other packa
+
 ## Installation
 
 ```bash
