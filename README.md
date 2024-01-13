@@ -13,6 +13,12 @@ The functions in this package include:
 
 Our package fills a gap in the python ecosystem by being marketed specifically to financial data. Python users commonly create EDA charts using popular packages like [matplotlib](https://pypi.org/project/matplotlib/), [altair](https://pypi.org/project/altair/), and [seaborn](https://pypi.org/project/seaborn/), and conduct their financial analysis using packages like [pandas](https://pypi.org/project/pandas/), [numpy](https://pypi.org/project/numpy/), and [scipy](https://pypi.org/project/SciPy/). These libraries are extensive, but have been generalized to be as useful as possible to as many differen fields as possible. It takes time to learn the syntax and code of these packages that work for financial data. This can be time consuming during EDA, when the goal is to quickly get a rough idea of what the data set you are using looks like. Our package will simplify these actions into a few functions that will save time on tedious EDA so that more time can be spent on analysis and testing.
 
+## Contributors
+- Doris (Yun Yi) Cai 
+- Jake Barnabe 
+- John Shiu 
+- Merete Lutz
+
 ## Installation
 
 ```bash
