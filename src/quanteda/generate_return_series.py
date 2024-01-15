@@ -52,3 +52,34 @@ def generate_return_series(
     2024-01-02  0.043215  0.019105 -0.005555
     2024-01-03 -0.001011  0.003333 -0.011111
     """
+    np.random.seed(random_state)
+    if annual_volatility < 0:
+        raise ValueError("annual_volatility < 0.")
+
+    if freq == 'D':
+        periods_per_year = 365
+    elif freq == 'H':
+        periods_per_year = 365 * 24
+    elif freq == 'min':
+        periods_per_year = 365 * 24 * 60
+    else:
+        raise ValueError("Invalid frequency. Use 'D' for day, 'H' for hour, 'min' for minute.") 
+
+    num_periods = int(periods_per_year) * num_series
+
+    if dist == 'normal':
+        returns = np.random.normal(
+            expected_annual_return / periods_per_year,
+            annual_volatility / np.sqrt(periods_per_year),
+            (n_rows, num_series)
+        )
+    elif dist == 'lognormal':
+        mu = np.log(1 + expected_annual_return) - 0.5 * (annual_volatility ** 2) / periods_per_year
+        sigma = annual_volatility / np.sqrt(periods_per_year)
+        returns = np.random.lognormal(mu, sigma, (n_rows, num_series))
+    else:
+        raise ValueError("Invalid distribution. Use 'normal' or 'lognormal'.")
+
+    datetime_range = pd.date_range(start=start_date, periods=n_rows, freq=freq)
+    
+    return pd.DataFrame(returns, index=datetime_range, columns=[f'series_{i+1}' for i in range(num_series)])
