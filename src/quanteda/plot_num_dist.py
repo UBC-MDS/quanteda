@@ -20,6 +20,9 @@ def plot_num_dist(data):
     >>> plot_num_dist(dataset)
 
     """
+    if not isinstance(data, pd.DataFrame):
+        raise TypeError('dataset must be a DataFrame') 
+    
     numeric_features = data.select_dtypes(include=np.number).columns.tolist()
 
     plot = alt.Chart(data).mark_bar().encode(
