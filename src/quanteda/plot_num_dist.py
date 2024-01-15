@@ -24,7 +24,7 @@ def plot_num_dist(data):
     if not isinstance(data, pd.DataFrame):
         raise TypeError('dataset must be a pandas DataFrame')
     
-   # Get list of numeric features
+    # Get list of numeric features
     numeric_features = data.select_dtypes(include=np.number).columns.to_list()
 
     # Create plot
