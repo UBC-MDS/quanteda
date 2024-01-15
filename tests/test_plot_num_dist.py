@@ -17,7 +17,7 @@ def test_mark_type():
     assert test_plot.to_dict()['spec']['mark']['type'] == 'bar', "The marks on the chart are not bars"
 
 def test_feature_type():
-    assert test_plot.to_dict()['spec']['encoding']['x']['type'] = 'quantitative', "The variables being plotted are not numeric"
+    assert test_plot.to_dict()['spec']['encoding']['x']['type'] == 'quantitative', "The variables being plotted are not numeric"
 
 def test_plot_aggregate():
-    assert test_plot.to_dict()['spec']['encoding']['y']['aggregate'] = 'count', "The y-axis does not represent a count"
+    assert test_plot.to_dict()['spec']['encoding']['y']['aggregate'] == 'count', "The y-axis does not represent a count"
