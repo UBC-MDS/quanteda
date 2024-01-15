@@ -1,7 +1,7 @@
 import pandas as pd
 import altair as alt
 
-def plot_num_dist(data):
+def plot_num_dist(data, group = None):
     """
     Creates a chart of histograms for all numeric features in a data set.
 
@@ -9,6 +9,9 @@ def plot_num_dist(data):
     ----------
     data : Data
         An object containing the dataset of interest
+    group : string
+        The name of a column in a dataset that a user wants to group their
+        data by.
 
     Returns
     -------
@@ -28,6 +31,7 @@ def plot_num_dist(data):
     plot = alt.Chart(data).mark_bar().encode(
         alt.X(alt.repeat()).type('quantitative').bin(maxbins=20),
         alt.Y('count()', stack=None).title('Frequency of Occurrence'),
+        alt.Color(target).title(target).scale(scheme='viridis')
     ).properties(
         width = 125,
         height = 125
