@@ -1,3 +1,4 @@
+import pytest
 import pandas as pd
 from quanteda.generate_return_series import generate_return_series
 
@@ -63,8 +64,8 @@ def test_output_dataframe():
         start_date='2024-01-01'
     )
 
-    assert isinstance(output, pd.DataFrame), "The output should be a pd.DataFrame."
-    assert output.shape == (n_rows, num_series)
+    assert isinstance(output, pd.DataFrame), f"Output should be a pd.DataFrame (current type: {type(output)})."
+    assert output.shape == (n_rows, num_series), f"Shape does not match, {(n_rows, num_series)} is expected (current shape: {output.shape})."
 
 def test_freq():
     # 2.3. test the frequency == freq as expected
