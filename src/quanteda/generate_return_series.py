@@ -63,7 +63,7 @@ def generate_return_series(
     elif freq == 'min':
         periods_per_year = 365 * 24 * 60
     else:
-        raise ValueError("Invalid frequency. Use 'D' for daily, 'H' for hourly, 'min' for minutely.") 
+        raise ValueError("Invalid frequency. Use 'D' for day, 'H' for hour, 'min' for minute.") 
 
     num_periods = int(periods_per_year) * num_series
 
