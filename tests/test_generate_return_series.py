@@ -34,7 +34,7 @@ def test_invalid_freq():
             random_state=524,
             start_date='2024-01-01'
         )
-    assert str(error.value) == "Invalid frequency. Use 'D' for daily, 'H' for hourly, 'min' for minutely."
+    assert str(error.value) == "Invalid frequency. Use 'D' for day, 'H' for hour, 'min' for minute"
 
 def test_invalid_dist():
     """
