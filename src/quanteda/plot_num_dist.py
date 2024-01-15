@@ -1,5 +1,6 @@
 import pandas as pd
 import altair as alt
+import numpy as np
 
 def plot_num_dist(data, group = None):
     """
@@ -24,14 +25,18 @@ def plot_num_dist(data, group = None):
 
     """
     if not isinstance(data, pd.DataFrame):
-        raise TypeError('dataset must be a DataFrame') 
+        raise TypeError('dataset must be a pandas DataFrame')
+    if not isinstance(group, str):
+        raise TypeError('group must be a string')
     
-    numeric_features = data.select_dtypes(include=np.number).columns.tolist()
+   # Get list of numeric features
+    numeric_features = data.select_dtypes(include=np.number).columns.to_list()
 
+    # Create plot
     plot = alt.Chart(data).mark_bar().encode(
         alt.X(alt.repeat()).type('quantitative').bin(maxbins=20),
         alt.Y('count()', stack=None).title('Frequency of Occurrence'),
-        alt.Color(target).title(target).scale(scheme='viridis')
+        alt.Color(group).title(group).scale(scheme='viridis')
     ).properties(
         width = 125,
         height = 125
@@ -39,6 +44,6 @@ def plot_num_dist(data, group = None):
         numeric_features,
         columns = 3
     )
-    return
+    return plot
 
 
