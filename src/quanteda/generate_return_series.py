@@ -53,6 +53,8 @@ def generate_return_series(
     2024-01-03 -0.001011  0.003333 -0.011111
     """
     np.random.seed(random_state)
+    if annual_volatility < 0:
+        raise ValueError("annual_volatility < 0.")
 
     if freq == 'D':
         periods_per_year = 365
