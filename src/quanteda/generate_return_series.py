@@ -25,7 +25,7 @@ def generate_return_series(
         Number of days, hours, or minutes (rows) to generate.
 
     freq : {'D', 'H', 'min'}, default 'D'
-        Frequency of returns ('D' for daily, 'H' for hourly, 'min' for minutely).
+        Frequency of returns ('D' for daily, 'H' for hourly, 'min' for minute).
 
     num_series : int, default 1
         Number of independent time series (columns) to generate.
