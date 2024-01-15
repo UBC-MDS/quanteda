@@ -3,7 +3,9 @@ import pandas as pd
 from quanteda.generate_return_series import generate_return_series
 
 def test_negative_annual_volatility():
-    # 1.1. test ValueError("ValueError: annual_volatility < 0")
+    """
+    Test case for ValueError when `annual_volatility` is negative.
+    """
     with pytest.raises(ValueError) as error:
         generate_return_series(
             expected_annual_return=0.05,
@@ -18,7 +20,9 @@ def test_negative_annual_volatility():
     assert str(error.value) == "annual_volatility < 0."
 
 def test_invalid_freq():
-    # 1.2. test ValueError("Invalid frequency. Use 'D' for daily, 'H' for hourly, 'min' for minutely.")
+    """
+    Test case for ValueError when an invalid `freq` is provided.
+    """
     with pytest.raises(ValueError) as error:
         generate_return_series(
             expected_annual_return=0.05,
@@ -33,7 +37,9 @@ def test_invalid_freq():
     assert str(error.value) == "Invalid frequency. Use 'D' for daily, 'H' for hourly, 'min' for minutely."
 
 def test_invalid_dist():
-    # 1.3. test ValueError("Invalid distribution. Use 'normal' or 'lognormal'.")
+    """
+    Test case for ValueError when an invalid `dist` is provided.
+    """
     with pytest.raises(ValueError) as error:
         generate_return_series(
             expected_annual_return=0.05,
@@ -48,8 +54,9 @@ def test_invalid_dist():
     assert str(error.value) == "Invalid distribution. Use 'normal' or 'lognormal'."
 
 def test_output_dataframe():
-    # 2.1. shape == (n_rows, num_series)
-    # 2.2. test object is data.frame
+    """
+    Test case for generating a pd.DataFrame as output with correct shape.
+    """
     n_rows = 365
     num_series = 10
 
@@ -67,6 +74,19 @@ def test_output_dataframe():
     assert isinstance(output, pd.DataFrame), f"Output should be a pd.DataFrame (current type: {type(output)})."
     assert output.shape == (n_rows, num_series), f"Shape does not match, {(n_rows, num_series)} is expected (current shape: {output.shape})."
 
-def test_freq():
+def test_freq(input_daily_returns_df):
+    """
+    Demo: To be deleted
+    """
     # 2.3. test the frequency == freq as expected
-    pass
+    df = generate_return_series(
+        expected_annual_return=0.05,
+        annual_volatility=0.2,
+        n_rows=365,
+        freq='D',
+        num_series=9,
+        dist='normal',
+        random_state=524,
+        start_date='2024-01-01'
+    )
+    assert df.equals(input_daily_returns_df)
