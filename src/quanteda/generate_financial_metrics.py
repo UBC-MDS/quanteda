@@ -15,7 +15,7 @@ def generate_financial_metrics(random_returns_df, annual_risk_free=0.00):
         
     Returns
     -------
-    pd.DataFrame:
+    DataFrame
         DataFrame containing financial metrics including count (number of returns), 
         total return, annual return, annual volatility, and Sharpe ratio.
 
