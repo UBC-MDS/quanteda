@@ -1,6 +1,7 @@
 import pytest
 import numpy as np
 from quanteda.generate_return_series import generate_return_series
+from quanteda.plot_num_dist import plot_num_dist
 
 @pytest.fixture
 def input_minute_returns_df():
@@ -48,3 +49,10 @@ def input_daily_returns_with_nan_df(input_daily_returns_df):
     df.loc[:, 'series_3'] = np.nan
     df.loc["2024-01-08"] = np.nan
     return df
+
+@pytest.fixture
+def num_dist_plot(input_daily_returns_df):
+    """
+    Fixture for generating a test Chart for plot_num_dist
+    """
+    return plot_num_dist(input_daily_returns_df)
