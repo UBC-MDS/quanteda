@@ -5,7 +5,7 @@ from quanteda.generate_return_series import generate_return_series
 from quanteda.generate_financial_metrics import generate_financial_metrics
 
 idx_h=pd.date_range("2018-01-01", periods=5, freq="H")
-idx_w=pd.date_range("2018-01-01", periods=5, freq="W")
+idx_w = pd.date_range("2018-01-01", periods=5, freq="W")
 
 input_df = pd.DataFrame(pd.Series(range(len(idx_h)), index=idx_h))
 mising_values_df = pd.DataFrame([np.nan, np.nan, 1, 2, 3], index=idx_h)
