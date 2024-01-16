@@ -2,7 +2,6 @@ import pytest
 import altair as alt
 from quanteda.plot_num_dist import plot_num_dist
 
-#test_plot = plot_num_dist(input_daily_returns_df)
 
 def test_plot_type(input_daily_returns_df):
     test_plot = plot_num_dist(input_daily_returns_df)
