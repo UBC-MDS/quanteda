@@ -50,9 +50,9 @@ def input_daily_returns_with_nan_df(input_daily_returns_df):
     df.loc["2024-01-08"] = np.nan
     return df
 
-@pytest.fixture
-def num_dist_plot(input_daily_returns_df):
-    """
-    Fixture for generating a test Chart for plot_num_dist
-    """
-    return plot_num_dist(input_daily_returns_df)
+# @pytest.fixture
+# def num_dist_plot(input_daily_returns_df):
+#     """
+#     Fixture for generating a test Chart for plot_num_dist
+#     """
+#     return plot_num_dist(input_daily_returns_df)
