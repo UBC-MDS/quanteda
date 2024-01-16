@@ -54,7 +54,7 @@ $ conda activate quanteda
 4. Install the package.
 
 ```bash
-$ poetrt install
+$ poetry install
 ```
 
 ### Run unit tests
