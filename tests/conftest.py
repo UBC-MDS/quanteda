@@ -1,7 +1,6 @@
 import pytest
 import numpy as np
 from quanteda.generate_return_series import generate_return_series
-from quanteda.plot_num_dist import plot_num_dist
 
 @pytest.fixture
 def input_minute_returns_df():
