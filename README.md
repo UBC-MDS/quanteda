@@ -36,6 +36,7 @@ Follow the instructions below to run the unit tests of the package
 
 ```bash
 $ git clone git@github.com:UBC-MDS/quanteda.git
+$ cd quanteda/
 ``` 
 
 2. Install the virtual environment.
