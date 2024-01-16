@@ -44,15 +44,19 @@ $ git clone git@github.com:UBC-MDS/quanteda.git
 $ conda env create -f environment.yml
 ```
 
-3. Run the following command to activate the installed environment:
+3. Activate the installed environment:
 
 ```bash
 $ conda activate quanteda
 ```    
 
-### Run unit tests
+4. Install the package.
 
-4. In the root folder of the repository, run:
+```bash
+$ poetrt install
+```
+
+### Run unit tests
 
 ```bash
 $ poetry run pytest
