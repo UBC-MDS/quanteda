@@ -34,8 +34,8 @@ def plot_missing_vals(df):
     ).mark_rect().encode(
         alt.X('index:O').axis(None),
         alt.Y('variable').title("Features"),
-        alt.Color('value').title('NaN'),
-        alt.Stroke('value')  # We set the stroke which is the outline of each rectangle in the heatmap
+        alt.Color('value').title('Missing Values'),
+        alt.Stroke('value')  
     ).properties(
         width=df.shape[0]
     )
