@@ -8,8 +8,14 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+pandas = "2.1.4"
+altair = "5.2.0"
 
 [tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "7.4.4"
+
 [tool.semantic_release]
 version_variable = "pyproject.toml:version" # version location
 branch = "main"                             # branch to make releases of
