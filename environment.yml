@@ -11,6 +11,7 @@ dependencies:
   - altair=5.2.0
   - cookiecutter=2.5.0
   - jupyterlab=4.0.9
+  - pytest=7.4.4
   - pip==23.3.2
   - pip:
     - poetry==1.7.1

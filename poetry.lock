@@ -12,6 +12,7 @@ files = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "coverage"
 version = "7.4.0"
 description = "Code coverage measurement for Python"
@@ -79,6 +80,8 @@ tomli = {version = "*", optional = true, markers = "python_full_version <= \"3.1
 toml = ["tomli"]
 
 [[package]]
+=======
+>>>>>>> main
 name = "exceptiongroup"
 version = "1.2.0"
 description = "Backport of PEP 654 (exception groups)"
@@ -152,6 +155,7 @@ tomli = {version = ">=1.0.0", markers = "python_version < \"3.11\""}
 testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
 
 [[package]]
+<<<<<<< HEAD
 name = "pytest-cov"
 version = "4.1.0"
 description = "Pytest plugin for measuring coverage."
@@ -170,6 +174,8 @@ pytest = ">=4.6"
 testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtualenv"]
 
 [[package]]
+=======
+>>>>>>> main
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
@@ -183,4 +189,8 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
+<<<<<<< HEAD
 content-hash = "93c8d609679da73b2d65dc4390720a711fb7cdd7a60a9cf5ca34e5654127d422"
+=======
+content-hash = "0b91baefade67e2fa6ac1afe66c809087ff128c83c81892d5d8bcd995ab488e2"
+>>>>>>> main
