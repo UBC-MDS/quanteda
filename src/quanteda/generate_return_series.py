@@ -41,7 +41,7 @@ def generate_return_series(
 
     Returns
     -------
-    DataFrame
+    pandas.DataFrame
         A DataFrame with columns as independent return time series.
 
     Examples

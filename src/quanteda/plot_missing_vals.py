@@ -1,7 +1,7 @@
 import altair as alt
 import pandas as pd
 
-def plot_missing_vals(df):
+def plot_missing_vals(data):
     """
     Plot tick chart to display missing values for all numeric features in the dataset.
 
@@ -10,25 +10,26 @@ def plot_missing_vals(df):
 
     Parameters
     ----------
-    - df : DataFrame
-        the dataset
+    data : pandas.DataFrame
+        The dataset.
 
     Returns
     -------
-    self: object
-        Altair chart object
+    altair.Chart
+        Altair chart object.
 
     Examples
     --------
-    plot_missing_vals(df)
+    >>> plot_missing_vals(data)
         
     """
+    
 
-    if not isinstance(df, pd.DataFrame):
+    if not isinstance(data, pd.DataFrame):
         raise ValueError("Data must be a pandas DataFrame")
     
     missing_vals_plot = alt.Chart(
-        df.isna().reset_index().melt(
+        data.isna().reset_index().melt(
             id_vars='index'
         )
     ).mark_rect().encode(
@@ -37,7 +38,7 @@ def plot_missing_vals(df):
         alt.Color('value').title('Missing Values'),
         alt.Stroke('value')  
     ).properties(
-        width=df.shape[0]
+        width=data.shape[0]
     )
 
     return missing_vals_plot
