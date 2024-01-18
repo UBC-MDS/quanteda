@@ -51,10 +51,16 @@ $ poetry install
 
 ### Run unit tests
 
-Execute the following in the project root directory to run the unit tests of the package
+Execute the following in the project root directory to run the unit tests of the package,
 
 ```bash
 $ poetry run pytest
+```
+
+or, to run with the code covergage reporting,
+
+```bash
+$ poetry run pytest --cov=quanteda
 ```
 
 ## Contributing
