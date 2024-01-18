@@ -4,7 +4,7 @@
 
 ## v1.0.0 (20/01/2024)
 
-- First release of `quanteda`!
+- Second release of `quanteda`!
 
 ### Added
 
