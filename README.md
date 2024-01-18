@@ -14,6 +14,7 @@ The functions in this package include:
 Our package fills a gap in the python ecosystem by being marketed specifically to financial data. Python users commonly create EDA charts using popular packages like [matplotlib](https://pypi.org/project/matplotlib/), [altair](https://pypi.org/project/altair/), and [seaborn](https://pypi.org/project/seaborn/), and conduct their financial analysis using packages like [pandas](https://pypi.org/project/pandas/), [numpy](https://pypi.org/project/numpy/), and [scipy](https://pypi.org/project/SciPy/). These libraries are extensive, but have been generalized to be as useful as possible to as many differen fields as possible. It takes time to learn the syntax and code of these packages that work for financial data. This can be time consuming during EDA, when the goal is to quickly get a rough idea of what the data set you are using looks like. Our package will simplify these actions into a few functions that will save time on tedious EDA so that more time can be spent on analysis and testing.
 
 ## Contributors
+
 - Doris (Yun Yi) Cai 
 - Jake Barnabe 
 - John Shiu 
@@ -21,13 +22,46 @@ Our package fills a gap in the python ecosystem by being marketed specifically t
 
 ## Installation
 
+1. Clone this repository.
+
 ```bash
-$ pip install quanteda
+$ git clone git@github.com:UBC-MDS/quanteda.git
+$ cd quanteda/
+``` 
+
+2. Install the virtual environment.
+
+```bash
+$ conda env create -f environment.yml
+```
+
+3. Activate the installed environment:
+
+```bash
+$ conda activate quanteda
+```    
+
+4. Install the package.
+
+```bash
+$ poetry install
 ```
 
 ## Usage
 
-- TODO
+### Run unit tests
+
+Execute the following in the project root directory to run the unit tests of the package,
+
+```bash
+$ poetry run pytest
+```
+
+or, to run with the code covergage reporting,
+
+```bash
+$ poetry run pytest --cov=quanteda
+```
 
 ## Contributing
 
