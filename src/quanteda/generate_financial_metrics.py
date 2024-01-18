@@ -7,7 +7,7 @@ def generate_financial_metrics(random_returns_df, annual_risk_free=0.00):
 
     Parameters
     ----------
-    random_returns_df : pd.DataFrame
+    random_returns_df : pandas.DataFrame
         DataFrame containing random return values with a datetime index.
 
     annual_risk_free : float, default 0.00.
@@ -15,7 +15,7 @@ def generate_financial_metrics(random_returns_df, annual_risk_free=0.00):
         
     Returns
     -------
-    DataFrame
+    pandas.DataFrame
         A DataFrame containing financial metrics including count (number of returns), 
         total return, annualized return, annualized volatility, and Sharpe ratio.
 
