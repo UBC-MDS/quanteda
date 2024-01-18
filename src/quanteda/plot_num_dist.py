@@ -8,13 +8,13 @@ def plot_num_dist(data):
 
     Parameters
     ----------
-    data : Data
+    data : pandas.DataFrame
         An object containing the dataset of interest
 
     Returns
     -------
-    self: Altair chart object
-        Returns an altair chart object
+    altair.Chart
+        Altair chart object
 
     Examples
     --------
