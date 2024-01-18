@@ -9,5 +9,5 @@ dependencies:
   - cookiecutter=2.5.0
   - pip==23.3.2
   - pip:
-    - poetry=1.7.1
+    - poetry==1.7.1
     - ghp-import==2.1.0
