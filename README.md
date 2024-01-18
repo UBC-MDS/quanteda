@@ -22,16 +22,6 @@ Our package fills a gap in the python ecosystem by being marketed specifically t
 
 ## Installation
 
-```bash
-$ pip install quanteda
-```
-
-## Usage
-
-Follow the instructions below to run the unit tests of the package
-
-### Setup
-
 1. Clone this repository.
 
 ```bash
@@ -57,7 +47,11 @@ $ conda activate quanteda
 $ poetry install
 ```
 
+## Usage
+
 ### Run unit tests
+
+Execute the following in the project root directory to run the unit tests of the package
 
 ```bash
 $ poetry run pytest
