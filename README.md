@@ -62,6 +62,9 @@ or, to run with the code covergage reporting,
 ```bash
 $ poetry run pytest --cov=quanteda
 ```
+## Documentation
+
+The official documentation is hosted on Read the Docs: https://quanteda.readthedocs.io/en/latest/
 
 ## Contributing
 
