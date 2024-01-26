@@ -8,7 +8,7 @@ def generate_financial_metrics(random_returns_df, annual_risk_free=0.00):
     Parameters
     ----------
     random_returns_df : pandas.DataFrame
-        DataFrame containing random return values with a datetime index.
+        DataFrame containing returns of stocks on time series.
 
     annual_risk_free : float, default 0.00.
         Annualized risk-free rate as a decimal (e.g., 0.02 for 2%).
@@ -17,21 +17,24 @@ def generate_financial_metrics(random_returns_df, annual_risk_free=0.00):
     -------
     pandas.DataFrame
         A DataFrame containing financial metrics including count (number of returns), 
-        total return, annualized return, annualized volatility, and Sharpe ratio.
+        total return, annualized return, annualized volatility, and Sharpe ratio for each
+        stock return series
 
     Examples
     --------
-    >>> random_returns_df = generate_return_series(expected_annual_return, 
-                                                   annual_volatility, 
-                                                   freq='H', 
-                                                   n_rows=5, 
-                                                   num_series=3, 
-                                                   dist="normal")
+    >>> random_returns_df = pd.DataFrame([
+    {'index': '2024-01-01 00:00:00', 'stock_1': -0.002286, 'stock_2': 0.002545, 'stock_3': 0.002997},
+    {'index': '2024-01-01 01:00:00', 'stock_1': 0.003045, 'stock_2': 0.002913, 'stock_3': -0.000855},
+    {'index': '2024-01-01 02:00:00', 'stock_1': -0.001142, 'stock_2': 0.000635, 'stock_3': -0.002592},
+    {'index': '2024-01-01 03:00:00', 'stock_1': 0.000971, 'stock_2': -0.000168, 'stock_3': 0.000074},
+    {'index': '2024-01-01 04:00:00', 'stock_1': -0.000392, 'stock_2': 0.002252, 'stock_3': -0.000342}
+    ])
+                                                   
     >>> generate_financial_metrics(random_returns_df, annual_risk_free=0.02)
-              count  total_return  annual_return  annual_volatility  sharpe_ratio
-    series_1	5	  0.000229	   0.400912	      0.256443	         1.485364
-    series_2	5	  0.010870	   19.043645	  0.166200	         114.462216
-    series_3	5	  -0.000990	   -1.734509	  0.253074	         -6.932784
+            	count	total_return	annual_return	annual_volatility	sharpe_ratio
+    stock_1 	5	    0.000196	    0.343184	    0.192332	        1.680339
+    stock_2 	5	    0.008177	    14.325234	    0.124650	        114.763058
+    stock_3 	5	    -0.000718	    -1.258381	    0.189806	        -6.735214
     """
 
     if random_returns_df.empty:
