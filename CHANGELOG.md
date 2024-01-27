@@ -7,9 +7,8 @@
 
 ### Added
 
-- package documentions `example.ipynb`
-- raw data files for documentations
-- 
+- Added documentation of the package via ReadTheDocs
+- Updated function docstrings according to feedback
 
 ### Changed
 
