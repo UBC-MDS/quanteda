@@ -3,7 +3,8 @@ import pandas as pd
 
 def plot_missing_vals(data):
     """
-    Plot tick chart to display missing values for all numeric features in the dataset.
+    Plot binary heatmap chart ('True' where there is a missing value and 'False' where there is not)
+    to display missing values for all numeric features in the dataset.
 
     This function is derived from UBC Master of Data Science course DSCI 531 Lecture 4 notes by Joel Ostblom 
     (https://pages.github.ubc.ca/MDS-2023-24/DSCI_531_viz-1_students/lectures/4-eda.html)
