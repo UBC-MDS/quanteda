@@ -1,6 +1,18 @@
 # Changelog
 
 <!--next-version-placeholder-->
+## v2.0.0 (28/01/2024)
+
+- Third release of `quanteda`!
+
+### Added
+
+- Added documentation of the package via ReadTheDocs
+- Updated function docstrings according to feedback
+
+### Changed
+
+- Modified the `pyproject.toml` to ensure the reproducibility of documentations
 
 ## v1.0.0 (20/01/2024)
 
