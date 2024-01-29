@@ -1,4 +1,5 @@
 # quanteda
+[![Documentation Status](https://readthedocs.org/projects/quanteda/badge/?version=latest)]
 
 Perform exploratory data analysis (EDA) on quantitative data.
 
