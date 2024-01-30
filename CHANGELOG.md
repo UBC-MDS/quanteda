@@ -2,6 +2,19 @@
 
 
 
+## v2.0.2 (2024-01-30)
+
+### Fix
+
+* fix: correct changelog version number ([`22c6cb4`](https://github.com/UBC-MDS/quanteda/commit/22c6cb4ed9078a623c5ad25136da5e71d9840337))
+
+### Unknown
+
+* Merge pull request #68 from UBC-MDS/correct_changelog
+
+fix: correct changelog version number ([`524c6b5`](https://github.com/UBC-MDS/quanteda/commit/524c6b5272c79af188330f7cb66698c845b75775))
+
+
 ## v2.0.1 (2024-01-30)
 
 ### Build
