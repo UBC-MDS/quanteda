@@ -31,7 +31,9 @@ Our package fills a gap in the python ecosystem by being marketed specifically t
 
 ### For User
 
-To install the package, run the command pip install quanteda
+To install the package, run the following command from the terminal
+```bash
+pip install quanteda
 
 ### For Developers
 
