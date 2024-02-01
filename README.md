@@ -16,7 +16,7 @@ The functions in this package include:
 - `plot_missing_vals`: Plot tick chart to display missing values for all numeric features in the dataset.
 - `plot_num_dist`: Creates a chart of histograms for all numeric features in a data set.
 - `generate_return_series`: Generates a DataFrame with independent time series of returns.
-- `generate_financial_metrics`: Calculates financial metrics based on a DataFrame of random returns on time series.
+- `generate_financial_metrics`: Calculates financial metrics based on a DataFrame of random returns on time series. These metrics are [`total return`](https://www.investopedia.com/terms/t/totalreturn.asp), [`annual return`](https://www.investopedia.com/terms/a/annual-return.asp), [`annual volatilities`](https://www.investopedia.com/terms/v/volatility.asp) and [`sharpe ratio`](https://www.investopedia.com/terms/s/sharperatio.asp)
 
 Our package fills a gap in the python ecosystem by being marketed specifically to financial data. Python users commonly create EDA charts using popular packages like [matplotlib](https://pypi.org/project/matplotlib/), [altair](https://pypi.org/project/altair/), and [seaborn](https://pypi.org/project/seaborn/), and conduct their financial analysis using packages like [pandas](https://pypi.org/project/pandas/), [numpy](https://pypi.org/project/numpy/), and [scipy](https://pypi.org/project/SciPy/). These libraries are extensive, but have been generalized to be as useful as possible to as many differen fields as possible. It takes time to learn the syntax and code of these packages that work for financial data. This can be time consuming during EDA, when the goal is to quickly get a rough idea of what the data set you are using looks like. Our package will simplify these actions into a few functions that will save time on tedious EDA so that more time can be spent on analysis and testing.
 
@@ -29,46 +29,73 @@ Our package fills a gap in the python ecosystem by being marketed specifically t
 
 ## Installation
 
+### For User
+
+To install the package, run the command pip install quanteda
+
+### For Developers
+
 1. Clone this repository.
 
 ```bash
-$ git clone git@github.com:UBC-MDS/quanteda.git
-$ cd quanteda/
+ git clone git@github.com:UBC-MDS/quanteda.git
+ cd quanteda/
 ``` 
 
 2. Install the virtual environment.
 
 ```bash
-$ conda env create -f environment.yml
+ conda env create -f environment.yml
 ```
 
 3. Activate the installed environment:
 
 ```bash
-$ conda activate quanteda
+ conda activate quanteda
 ```    
 
 4. Install the package.
 
 ```bash
-$ poetry install
+ poetry install
 ```
-
 ## Usage
+
+### Using this package
+To use this package, import and call the functions in Python. Below is an example:
+
+```bash
+from quanteda.plot_missing_vals import plot_missing_vals
+from quanteda.plot_num_dist import plot_num_dist
+from quanteda.generate_financial_metrics import generate_financial_metrics
+from quanteda.generate_return_series import generate_return_series
+```
+Call function `plot_missing_vals` to visualize the presence of missing values.
+<img width="647" alt="image" src="https://github.com/UBC-MDS/quanteda/assets/100008826/a39d5d99-a303-4066-9d42-f23113ce5531">
+
+Call function `plot_num_dist` to plot the distribution of the return series.
+<img width="637" alt="image" src="https://github.com/UBC-MDS/quanteda/assets/100008826/c2d42ec8-9ec9-4af6-9597-7fb813a3965c">
+
+Call function `generate_financial_metrics` to calculate the financial metrics of the return series.
+<img width="648" alt="image" src="https://github.com/UBC-MDS/quanteda/assets/100008826/9354795c-d94b-4fd2-ab9b-2a9f5c28ea7e">
+
+Call function `generate_return_series` to simulate time series return given an expected return, volatility and return distribution of a stock.
+<img width="576" alt="image" src="https://github.com/UBC-MDS/quanteda/assets/100008826/73331894-1354-4aa3-a6f4-c8c41e309e6b">
 
 ### Run unit tests
 
 Execute the following in the project root directory to run the unit tests of the package,
 
 ```bash
-$ poetry run pytest
+ poetry run pytest
 ```
 
 or, to run with the code covergage reporting,
 
 ```bash
-$ poetry run pytest --cov=quanteda
+ poetry run pytest --cov=quanteda
 ```
+
 ## Documentation
 
 The official documentation is hosted on Read the Docs: https://quanteda.readthedocs.io/en/latest/
