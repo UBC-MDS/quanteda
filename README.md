@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 [![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/) 
 ![release](https://img.shields.io/github/release-date/UBC-MDS/quanteda) ![version](https://img.shields.io/github/v/release/UBC-MDS/quanteda)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 Perform exploratory data analysis (EDA) on quantitative data.
 
