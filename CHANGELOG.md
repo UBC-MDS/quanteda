@@ -2,6 +2,23 @@
 
 
 
+## v2.0.7 (2024-02-01)
+
+### Fix
+
+* fix: feedback addressed by improving test coverage and docstrings for generate_financial_metrics ([`aaa15dc`](https://github.com/UBC-MDS/quanteda/commit/aaa15dcac7c39a3a77f9ef3755c17219a80e259d))
+
+### Unknown
+
+* Merge pull request #93 from UBC-MDS/financial_metrics
+
+fix: feedback addressed by improving test coverage and docstrings for generate_financial_metrics ([`b07151a`](https://github.com/UBC-MDS/quanteda/commit/b07151a12197a01e99ec9be3fd54adbd1efa3dc0))
+
+* Update README.md
+
+Small formatting error with image ([`d26f060`](https://github.com/UBC-MDS/quanteda/commit/d26f0600569191feab66d7e7946c97e35b25c882))
+
+
 ## v2.0.6 (2024-02-01)
 
 ### Fix
