@@ -2,6 +2,15 @@
 
 
 
+## v2.0.8 (2024-02-01)
+
+### Unknown
+
+* Merge pull request #91 from UBC-MDS/plot_test_edge_case
+
+Fixed issue with plot_num_dist tests ([`7204bad`](https://github.com/UBC-MDS/quanteda/commit/7204bad49659a940248ce21c70d5bb09a512c53f))
+
+
 ## v2.0.7 (2024-02-01)
 
 ### Fix
@@ -33,6 +42,12 @@ fix: address feedback by removing cookicutter ([`9819665`](https://github.com/UB
 
 
 ## v2.0.5 (2024-02-01)
+
+### Fix
+
+* fix: Addressed feedback by adding more extensive testing to test_plot_num_dist ([`21aca28`](https://github.com/UBC-MDS/quanteda/commit/21aca287d6a06676de3c72c3f5dfa46251225f94))
+
+* fix: Feedback addressed by adding additional test for numeric dataframe and fixing regex mismatch ([`0d908e1`](https://github.com/UBC-MDS/quanteda/commit/0d908e1e298f4f4368588eda8facc6dfea6e38c4))
 
 ### Unknown
 
