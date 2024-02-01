@@ -2,9 +2,20 @@
 
 
 
+## v2.0.4 (2024-02-01)
+
+### Unknown
+
+* Merge pull request #89 from UBC-MDS/readme_structure
+
+fix: Addressing feedback by adding description and python ecosystem s… ([`2ce8ac6`](https://github.com/UBC-MDS/quanteda/commit/2ce8ac69e3fe6e59cb8a99a794ef3c1e4a77f1f0))
+
+
 ## v2.0.3 (2024-02-01)
 
 ### Fix
+
+* fix: Addressing feedback by adding description and python ecosystem subheader ([`0ca0879`](https://github.com/UBC-MDS/quanteda/commit/0ca08795e1b37a93b40ccb158a1b538dcc6d0d8e))
 
 * fix: refresh example.ipynb in quanteda env ([`b866ccd`](https://github.com/UBC-MDS/quanteda/commit/b866ccddce2f7b6c00fbbe10e509183e659a1be3))
 
