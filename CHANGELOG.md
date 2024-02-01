@@ -2,6 +2,19 @@
 
 
 
+## v2.0.6 (2024-02-01)
+
+### Fix
+
+* fix: address feedback by removing cookicutter ([`d3c5ff3`](https://github.com/UBC-MDS/quanteda/commit/d3c5ff3e04e4c98790d6dd9edb235431e284f43a))
+
+### Unknown
+
+* Merge pull request #92 from UBC-MDS/remove_unnecessary_dependencies
+
+fix: address feedback by removing cookicutter ([`9819665`](https://github.com/UBC-MDS/quanteda/commit/98196651572fe091903de9d612ee94535e04eb2c))
+
+
 ## v2.0.5 (2024-02-01)
 
 ### Unknown
