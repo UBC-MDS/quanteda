@@ -2,6 +2,15 @@
 
 
 
+## v2.0.9 (2024-02-01)
+
+### Unknown
+
+* Merge pull request #95 from UBC-MDS/update_generate_return_series
+
+Update generate return series ([`0058a5e`](https://github.com/UBC-MDS/quanteda/commit/0058a5edcc744834e57032b38cdb7d6d43159253))
+
+
 ## v2.0.8 (2024-02-01)
 
 ### Unknown
@@ -14,6 +23,8 @@ Fixed issue with plot_num_dist tests ([`7204bad`](https://github.com/UBC-MDS/qua
 ## v2.0.7 (2024-02-01)
 
 ### Fix
+
+* fix: address feedback by improving test coverage in generate_return_series ([`1f8802d`](https://github.com/UBC-MDS/quanteda/commit/1f8802da31c023745d0424c7bd242761faa0422e))
 
 * fix: feedback addressed by improving test coverage and docstrings for generate_financial_metrics ([`aaa15dc`](https://github.com/UBC-MDS/quanteda/commit/aaa15dcac7c39a3a77f9ef3755c17219a80e259d))
 
@@ -31,6 +42,8 @@ Small formatting error with image ([`d26f060`](https://github.com/UBC-MDS/quante
 ## v2.0.6 (2024-02-01)
 
 ### Fix
+
+* fix: address feedback by removing unnecessary variables in function ([`9f83726`](https://github.com/UBC-MDS/quanteda/commit/9f837265ede13e0648d210b65d8ee5f10efaef7a))
 
 * fix: address feedback by removing cookicutter ([`d3c5ff3`](https://github.com/UBC-MDS/quanteda/commit/d3c5ff3e04e4c98790d6dd9edb235431e284f43a))
 
