@@ -8,7 +8,8 @@ def generate_financial_metrics(random_returns_df, annual_risk_free=0.00):
     Parameters
     ----------
     random_returns_df : pandas.DataFrame
-        DataFrame containing returns of stocks on time series.
+        DataFrame containing returns of stocks on time series in columns. Each column is an independent series of returns. 
+        The supported frequencies of the index is 'D' for daily, 'H' for hourly and 'min' for minutely.
 
     annual_risk_free : float, default 0.00.
         Annualized risk-free rate as a decimal (e.g., 0.02 for 2%).
@@ -55,7 +56,7 @@ def generate_financial_metrics(random_returns_df, annual_risk_free=0.00):
         periods_per_year = 365
     elif freq == 'H':
         periods_per_year = 365 * 24
-    elif freq == 'min':
+    elif freq == 'T':
         periods_per_year = 365 * 24 * 60
     else:
         raise ValueError("Invalid frequency. Frequency should be either 'D' for daily, 'H' for hourly, or 'min' for minutely.") 
