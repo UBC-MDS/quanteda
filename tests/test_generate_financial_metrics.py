@@ -4,14 +4,18 @@ import numpy as np
 from quanteda.generate_return_series import generate_return_series
 from quanteda.generate_financial_metrics import generate_financial_metrics
 
+idx_d = pd.date_range("2018-01-01", periods=5, freq="D")
 idx_h = pd.date_range("2018-01-01", periods=5, freq="H")
+idx_min = pd.date_range("2018-01-01", periods=5, freq="min")
 idx_w = pd.date_range("2018-01-01", periods=5, freq="W")
 
 input_df = pd.DataFrame(pd.Series(range(len(idx_h)), index=idx_h))
 mising_values_df = pd.DataFrame([np.nan, np.nan, 1, 2, 3], index=idx_h)
 incorrect_freq_df = pd.DataFrame(pd.Series(range(len(idx_w)), index=idx_w))
 zero_vol_df = df = pd.DataFrame(([0, 0, 0, 0, 0]), index=idx_h)
-test_cal_df = pd.DataFrame(([0.5, 0.2, -0.3, 0, 0]), index=idx_h)
+test_cal_df_h = pd.DataFrame(([0.5, 0.2, -0.3, 0, 0]), index=idx_h)
+test_cal_df_d = pd.DataFrame(([0.5, 0.2, -0.3, 0, 0]), index=idx_d)
+test_cal_df_min = pd.DataFrame(([0.5, 0.2, -0.3, 0, 0]), index=idx_min)
 
 def test_empty_dataframe():
     """Checking if an input dataframe is empty or not."""
@@ -48,14 +52,32 @@ def test_zero_volatility():
     result_df = generate_financial_metrics(zero_vol_df, annual_risk_free=0.01)
     assert result_df['annual_volatility'].all() == 0.0  # Expecting zero annual volatility
 
-def test_calculations():
+def test_calculations_h():
     """Checking if the output metrics are expected"""
-    result_df = generate_financial_metrics(test_cal_df, annual_risk_free=0.01).round(1)
+    result_df = generate_financial_metrics(test_cal_df_h, annual_risk_free=0.01).round(1)
     assert result_df['count'][0] == 5
     assert result_df['total_return'][0] == 0.4
     assert result_df['annual_return'][0] == 700.8
     assert result_df['annual_volatility'][0] == 27.6
     assert result_df['sharpe_ratio'][0] == 25.4
+
+def test_calculations_d():
+    """Checking if the output metrics are expected"""
+    result_df = generate_financial_metrics(test_cal_df_d, annual_risk_free=0.01).round(1)
+    assert result_df['count'][0] == 5
+    assert result_df['total_return'][0] == 0.4
+    assert result_df['annual_return'][0] == 29.2
+    assert result_df['annual_volatility'][0] == 5.6
+    assert result_df['sharpe_ratio'][0] == 5.2
+
+def test_calculations_min():
+    """Checking if the output metrics are expected"""
+    result_df = generate_financial_metrics(test_cal_df_min, annual_risk_free=0.01).round(1)
+    assert result_df['count'][0] == 5
+    assert result_df['total_return'][0] == 0.4
+    assert result_df['annual_return'][0] == 42048.0
+    assert result_df['annual_volatility'][0] == 213.8
+    assert result_df['sharpe_ratio'][0] == 196.6
     
     
 
