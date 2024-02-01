@@ -7,7 +7,7 @@
 ![release](https://img.shields.io/github/release-date/UBC-MDS/quanteda) ![version](https://img.shields.io/github/v/release/UBC-MDS/quanteda)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-Perform exploratory data analysis (EDA) on quantitative data.
+Perform exploratory data analysis (EDA) on quantitative financial data.
 
 This package aims to be the starting point for any analysis of quantitative financial data by supplying functions that create charts and metrics to simplify  exploratory data analysis and give the user a jump-start on their project. This package simplifies the creation of charts that look at the distribution of numeric features and missing information in the data set; two critical steps in any financial analysis. The package also includes a function that will generate a random time series. Financial variables like stock prices and interest rates vary over time, so this ability to generate a time series quickly is extremely useful. Finally, this package also includes a function that will automatically calculate several useful financial metrics so that more time can be spent on more complicated analysis.
 
