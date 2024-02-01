@@ -101,6 +101,15 @@ or, to run with the code covergage reporting,
  poetry run pytest --cov=quanteda
 ```
 
+```bash
+ poetry run pytest --cov=quanteda --cov-branch
+```
+
+```bash
+ poetry run pytest --cov=quanteda --cov-branch --cov-report term-missing
+```
+
+
 ## Documentation
 
 The official documentation is hosted on Read the Docs: https://quanteda.readthedocs.io/en/latest/
