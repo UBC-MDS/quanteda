@@ -65,8 +65,6 @@ def generate_return_series(
     else:
         raise ValueError("Invalid frequency. Use 'D' for day, 'H' for hour, 'min' for minute.") 
 
-    num_periods = int(periods_per_year) * num_series
-
     if dist == 'normal':
         returns = np.random.normal(
             expected_annual_return / periods_per_year,
