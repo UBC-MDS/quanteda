@@ -2,6 +2,119 @@
 
 
 
+## v2.0.9 (2024-02-01)
+
+### Unknown
+
+* Merge pull request #95 from UBC-MDS/update_generate_return_series
+
+Update generate return series ([`0058a5e`](https://github.com/UBC-MDS/quanteda/commit/0058a5edcc744834e57032b38cdb7d6d43159253))
+
+
+## v2.0.8 (2024-02-01)
+
+### Unknown
+
+* Merge pull request #91 from UBC-MDS/plot_test_edge_case
+
+Fixed issue with plot_num_dist tests ([`7204bad`](https://github.com/UBC-MDS/quanteda/commit/7204bad49659a940248ce21c70d5bb09a512c53f))
+
+
+## v2.0.7 (2024-02-01)
+
+### Fix
+
+* fix: address feedback by improving test coverage in generate_return_series ([`1f8802d`](https://github.com/UBC-MDS/quanteda/commit/1f8802da31c023745d0424c7bd242761faa0422e))
+
+* fix: feedback addressed by improving test coverage and docstrings for generate_financial_metrics ([`aaa15dc`](https://github.com/UBC-MDS/quanteda/commit/aaa15dcac7c39a3a77f9ef3755c17219a80e259d))
+
+### Unknown
+
+* Merge pull request #93 from UBC-MDS/financial_metrics
+
+fix: feedback addressed by improving test coverage and docstrings for generate_financial_metrics ([`b07151a`](https://github.com/UBC-MDS/quanteda/commit/b07151a12197a01e99ec9be3fd54adbd1efa3dc0))
+
+* Update README.md
+
+Small formatting error with image ([`d26f060`](https://github.com/UBC-MDS/quanteda/commit/d26f0600569191feab66d7e7946c97e35b25c882))
+
+
+## v2.0.6 (2024-02-01)
+
+### Fix
+
+* fix: address feedback by removing unnecessary variables in function ([`9f83726`](https://github.com/UBC-MDS/quanteda/commit/9f837265ede13e0648d210b65d8ee5f10efaef7a))
+
+* fix: address feedback by removing cookicutter ([`d3c5ff3`](https://github.com/UBC-MDS/quanteda/commit/d3c5ff3e04e4c98790d6dd9edb235431e284f43a))
+
+### Unknown
+
+* Merge pull request #92 from UBC-MDS/remove_unnecessary_dependencies
+
+fix: address feedback by removing cookicutter ([`9819665`](https://github.com/UBC-MDS/quanteda/commit/98196651572fe091903de9d612ee94535e04eb2c))
+
+
+## v2.0.5 (2024-02-01)
+
+### Fix
+
+* fix: Addressed feedback by adding more extensive testing to test_plot_num_dist ([`21aca28`](https://github.com/UBC-MDS/quanteda/commit/21aca287d6a06676de3c72c3f5dfa46251225f94))
+
+* fix: Feedback addressed by adding additional test for numeric dataframe and fixing regex mismatch ([`0d908e1`](https://github.com/UBC-MDS/quanteda/commit/0d908e1e298f4f4368588eda8facc6dfea6e38c4))
+
+### Unknown
+
+* Merge pull request #87 from UBC-MDS/readme
+
+fix: Feedback(3) addressed by adding installation guide, adding example in usage and providing basic definition to outputs on README ([`74dfbde`](https://github.com/UBC-MDS/quanteda/commit/74dfbde18e1b22a0690bd8792ac7e7a7c046f5f9))
+
+
+## v2.0.4 (2024-02-01)
+
+### Fix
+
+* fix: updated commands and code quotations ([`948e297`](https://github.com/UBC-MDS/quanteda/commit/948e29765962cc9fdd9dbde62ff97a0b3dd240c9))
+
+* fix: updated command to be copy-able
+
+Co-authored-by: Merete Lutz &lt;143561866+meretelutz@users.noreply.github.com&gt; ([`8ff99a7`](https://github.com/UBC-MDS/quanteda/commit/8ff99a7c2d432f59f11072c85f98c32a2c87a7e2))
+
+### Unknown
+
+* Merge pull request #89 from UBC-MDS/readme_structure
+
+fix: Addressing feedback by adding description and python ecosystem s… ([`2ce8ac6`](https://github.com/UBC-MDS/quanteda/commit/2ce8ac69e3fe6e59cb8a99a794ef3c1e4a77f1f0))
+
+
+## v2.0.3 (2024-02-01)
+
+### Fix
+
+* fix: Addressing feedback by adding description and python ecosystem subheader ([`0ca0879`](https://github.com/UBC-MDS/quanteda/commit/0ca08795e1b37a93b40ccb158a1b538dcc6d0d8e))
+
+* fix: refresh example.ipynb in quanteda env ([`b866ccd`](https://github.com/UBC-MDS/quanteda/commit/b866ccddce2f7b6c00fbbe10e509183e659a1be3))
+
+* fix: feedback addressed by adding definitions to financial metrics ([`006b1ec`](https://github.com/UBC-MDS/quanteda/commit/006b1ec43a5990017a4f58fdf47006f71b4a5f56))
+
+* fix: Feedback(3) addressed by Doris
+
+- added package installation section
+- updated usage section to include example of how
+- updated summary section to provide basic definitions to the output financial metrics ([`db13b41`](https://github.com/UBC-MDS/quanteda/commit/db13b41ec01b4deba540d4c6e8e94c69d81612f4))
+
+### Unknown
+
+* Merge pull request #88 from UBC-MDS/docs
+
+fix: feedback addressed by adding definitions to financial metrics on Vignette ([`747c354`](https://github.com/UBC-MDS/quanteda/commit/747c354760499c06895506d3e60512b02ea6fc77))
+
+* Merge pull request #83 from UBC-MDS/badges
+
+Feedback: Added repostatus badge to readme ([`c0e6066`](https://github.com/UBC-MDS/quanteda/commit/c0e60662e25bc13ebe047969778e3debe309ac5f))
+
+* Feedback: Added repostatus badge to readme ([`04b8439`](https://github.com/UBC-MDS/quanteda/commit/04b84396fd83fe2b899e264e62e87e88200da8ab))
+
+
 ## v2.0.2 (2024-01-30)
 
 ### Fix
