@@ -84,6 +84,7 @@ Call function `generate_financial_metrics` to calculate the financial metrics of
 <img width="648" alt="image" src="https://github.com/UBC-MDS/quanteda/assets/100008826/9354795c-d94b-4fd2-ab9b-2a9f5c28ea7e">
 
 Call function `generate_return_series` to simulate time series return given an expected return, volatility and return distribution of a stock.
+
 <img width="576" alt="image" src="https://github.com/UBC-MDS/quanteda/assets/100008826/73331894-1354-4aa3-a6f4-c8c41e309e6b">
 
 ### Run unit tests
