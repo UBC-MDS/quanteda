@@ -2,6 +2,27 @@
 
 
 
+## v2.0.3 (2024-02-01)
+
+### Fix
+
+* fix: refresh example.ipynb in quanteda env ([`b866ccd`](https://github.com/UBC-MDS/quanteda/commit/b866ccddce2f7b6c00fbbe10e509183e659a1be3))
+
+* fix: feedback addressed by adding definitions to financial metrics ([`006b1ec`](https://github.com/UBC-MDS/quanteda/commit/006b1ec43a5990017a4f58fdf47006f71b4a5f56))
+
+### Unknown
+
+* Merge pull request #88 from UBC-MDS/docs
+
+fix: feedback addressed by adding definitions to financial metrics on Vignette ([`747c354`](https://github.com/UBC-MDS/quanteda/commit/747c354760499c06895506d3e60512b02ea6fc77))
+
+* Merge pull request #83 from UBC-MDS/badges
+
+Feedback: Added repostatus badge to readme ([`c0e6066`](https://github.com/UBC-MDS/quanteda/commit/c0e60662e25bc13ebe047969778e3debe309ac5f))
+
+* Feedback: Added repostatus badge to readme ([`04b8439`](https://github.com/UBC-MDS/quanteda/commit/04b84396fd83fe2b899e264e62e87e88200da8ab))
+
+
 ## v2.0.2 (2024-01-30)
 
 ### Fix
