@@ -34,6 +34,7 @@ Our package fills a gap in the python ecosystem by being marketed specifically t
 To install the package, run the following command from the terminal
 ```bash
 pip install quanteda
+```
 
 ### For Developers
 
@@ -66,12 +67,13 @@ pip install quanteda
 ### Using this package
 To use this package, import and call the functions in Python. Below is an example:
 
-```bash
+```python
 from quanteda.plot_missing_vals import plot_missing_vals
 from quanteda.plot_num_dist import plot_num_dist
 from quanteda.generate_financial_metrics import generate_financial_metrics
 from quanteda.generate_return_series import generate_return_series
 ```
+
 Call function `plot_missing_vals` to visualize the presence of missing values.
 <img width="647" alt="image" src="https://github.com/UBC-MDS/quanteda/assets/100008826/a39d5d99-a303-4066-9d42-f23113ce5531">
 
