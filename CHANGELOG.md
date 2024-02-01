@@ -2,7 +2,24 @@
 
 
 
+## v2.0.5 (2024-02-01)
+
+### Unknown
+
+* Merge pull request #87 from UBC-MDS/readme
+
+fix: Feedback(3) addressed by adding installation guide, adding example in usage and providing basic definition to outputs on README ([`74dfbde`](https://github.com/UBC-MDS/quanteda/commit/74dfbde18e1b22a0690bd8792ac7e7a7c046f5f9))
+
+
 ## v2.0.4 (2024-02-01)
+
+### Fix
+
+* fix: updated commands and code quotations ([`948e297`](https://github.com/UBC-MDS/quanteda/commit/948e29765962cc9fdd9dbde62ff97a0b3dd240c9))
+
+* fix: updated command to be copy-able
+
+Co-authored-by: Merete Lutz &lt;143561866+meretelutz@users.noreply.github.com&gt; ([`8ff99a7`](https://github.com/UBC-MDS/quanteda/commit/8ff99a7c2d432f59f11072c85f98c32a2c87a7e2))
 
 ### Unknown
 
@@ -20,6 +37,12 @@ fix: Addressing feedback by adding description and python ecosystem s… ([`2ce8
 * fix: refresh example.ipynb in quanteda env ([`b866ccd`](https://github.com/UBC-MDS/quanteda/commit/b866ccddce2f7b6c00fbbe10e509183e659a1be3))
 
 * fix: feedback addressed by adding definitions to financial metrics ([`006b1ec`](https://github.com/UBC-MDS/quanteda/commit/006b1ec43a5990017a4f58fdf47006f71b4a5f56))
+
+* fix: Feedback(3) addressed by Doris
+
+- added package installation section
+- updated usage section to include example of how
+- updated summary section to provide basic definitions to the output financial metrics ([`db13b41`](https://github.com/UBC-MDS/quanteda/commit/db13b41ec01b4deba540d4c6e8e94c69d81612f4))
 
 ### Unknown
 
