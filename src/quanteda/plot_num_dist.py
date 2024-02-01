@@ -22,10 +22,13 @@ def plot_num_dist(data):
 
     """
     if not isinstance(data, pd.DataFrame):
-        raise TypeError('dataset must be a pandas DataFrame')
+        raise AssertionError('dataset must be a pandas DataFrame')
     
     # Get list of numeric features
     numeric_features = data.select_dtypes(include=np.number).columns.to_list()
+
+    if len(numeric_features) == 0:
+        raise AssertionError('dataset has no numeric features')
 
     # Create plot
     plot = alt.Chart(data).mark_bar().encode(
