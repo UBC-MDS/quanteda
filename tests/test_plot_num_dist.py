@@ -40,7 +40,7 @@ def test_plot_dims(input_daily_returns_df):
     assert test_plot.to_dict()['spec']['height'] == 125, "The height of the plot is not 125"
     assert test_plot.to_dict()['spec']['width'] == 125, "The width of the plot is not 125"
 
-def test_empty_dataframe():
+def test_for_dataframe():
     """Checking if the input is a dataframe or not."""
     with pytest.raises(ValueError, match="plot_num_dist was not passed a dataframe"):
         plot_num_dist('dataframe')
