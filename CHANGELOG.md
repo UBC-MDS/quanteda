@@ -2,6 +2,21 @@
 
 
 
+## v2.0.11 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by adding instructions for cloning repo by HTTP ([`a317e47`](https://github.com/UBC-MDS/quanteda/commit/a317e477446f98bfc594b621d495cc4acf7dab76))
+
+### Unknown
+
+* Merge pull request #98 from UBC-MDS/install_instructions_edit
+
+fix: Feedback addressed by adding instructions for cloning repo by HTTP ([`d39842f`](https://github.com/UBC-MDS/quanteda/commit/d39842f20e465c5004a16704f4e0bf10ec6b0de1))
+
+* resolved merge conflict from main ([`9f490ed`](https://github.com/UBC-MDS/quanteda/commit/9f490edcdcad99c1f84bcc4feb19d5609d1a3703))
+
+
 ## v2.0.10 (2024-02-02)
 
 ### Fix
