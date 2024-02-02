@@ -2,6 +2,21 @@
 
 
 
+## v2.0.12 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by adding a test for the if raise clause in plot_missing_vals ([`f8df94b`](https://github.com/UBC-MDS/quanteda/commit/f8df94bcfc795b0aad2f9131f9222bcd5f59f9c9))
+
+### Unknown
+
+* Merge pull request #100 from UBC-MDS/plot_missing_vals_tests_edit
+
+fix: Feedback addressed by adding a testing the edge case in plot_missing_vals ([`1e7e424`](https://github.com/UBC-MDS/quanteda/commit/1e7e424567b4e8c90b5ec5d545d3685ddb83d141))
+
+* Merge branch &#39;main&#39; into plot_missing_vals_tests_edit ([`853e2b7`](https://github.com/UBC-MDS/quanteda/commit/853e2b71f766c6725d9fc71c28430143aa817ff7))
+
+
 ## v2.0.11 (2024-02-02)
 
 ### Fix
