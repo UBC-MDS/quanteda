@@ -2,6 +2,23 @@
 
 
 
+## v2.0.10 (2024-02-02)
+
+### Fix
+
+* fix: address feedback by modifying the package description ([`ad89d35`](https://github.com/UBC-MDS/quanteda/commit/ad89d35e3b0fab60994878facd80d090c8deb3fa))
+
+### Unknown
+
+* Merge pull request #97 from UBC-MDS/readme
+
+fix: address feedback by modifying the package description ([`ceb742e`](https://github.com/UBC-MDS/quanteda/commit/ceb742e7097b45bd4ea572bbc920e2ad0b838d84))
+
+* include more examples on unit tests ([`51306b5`](https://github.com/UBC-MDS/quanteda/commit/51306b503b99d65641d0ceb01152711e51bd4058))
+
+* Merge branch &#39;main&#39; into readme ([`3749c7c`](https://github.com/UBC-MDS/quanteda/commit/3749c7c716a3b139e95767364a1e0354228f2db8))
+
+
 ## v2.0.9 (2024-02-01)
 
 ### Unknown
