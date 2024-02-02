@@ -7,7 +7,7 @@
 ![release](https://img.shields.io/github/release-date/UBC-MDS/quanteda) ![version](https://img.shields.io/github/v/release/UBC-MDS/quanteda)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-Perform exploratory data analysis (EDA) on quantitative data.
+Perform exploratory data analysis (EDA) on quantitative financial data.
 
 ## Function Description
 
@@ -100,6 +100,15 @@ or, to run with the code covergage reporting,
 ```bash
  poetry run pytest --cov=quanteda
 ```
+
+```bash
+ poetry run pytest --cov=quanteda --cov-branch
+```
+
+```bash
+ poetry run pytest --cov=quanteda --cov-branch --cov-report term-missing
+```
+
 
 ## Documentation
 
