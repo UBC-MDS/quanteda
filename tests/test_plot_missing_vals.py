@@ -28,3 +28,7 @@ def test_y_axis_title(input_daily_returns_with_nan_df):
     test_plot = plot_missing_vals(input_daily_returns_with_nan_df)
     assert test_plot.to_dict()['encoding']['y']['title'] == 'Features', "The y-axis title is incorrect."
 
+def test_for_dataframe():
+    """Checking if the input is a dataframe or not."""
+    with pytest.raises(ValueError, match="Data must be a pandas DataFrame"):
+        plot_missing_vals(123)
