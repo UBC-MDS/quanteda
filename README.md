@@ -32,6 +32,7 @@ The functions in this package include:
 ### For User
 
 To install the package, run the following command from the terminal
+
 ```bash
 pip install quanteda
 ```
@@ -41,12 +42,10 @@ pip install quanteda
 1. Clone this repository.
 
 ```bash
-# If using SSH key:
  git clone git@github.com:UBC-MDS/quanteda.git
  cd quanteda/
-
-# If using HTTP, simply change to HTTP and copy the clone link before following the same procedure
 ``` 
+Note: If you are using HTTP, simply change to HTTP and copy the clone link before following the same procedure above.
 
 2. Install the virtual environment.
 
