@@ -16,6 +16,17 @@ test_df = generate_return_series(
     start_date='2024-01-01'
 )
 
+test_df_w_min = generate_return_series(
+    expected_annual_return=0.05,
+    annual_volatility=0.2,
+    n_rows=test_n_rows,
+    freq='min',
+    num_series=test_num_series,
+    dist='normal',
+    random_state=524,
+    start_date='2024-01-01'
+)
+
 def test_negative_annual_volatility():
     """
     Test case for ValueError when `annual_volatility` is negative.
@@ -59,7 +70,7 @@ def test_invalid_dist():
             expected_annual_return=0.05,
             annual_volatility=0.2,
             n_rows=3,
-            freq='D',
+            freq='H',
             num_series=3,
             dist='t',
             random_state=524,
@@ -71,6 +82,8 @@ def test_output_dataframe():
     """
     Test case for generating a pd.DataFrame as output with correct shape.
     """
-    assert isinstance(test_df, pd.DataFrame), f"Output should be a pd.DataFrame (current type: {type(output)})."
-    assert test_df.shape == (test_n_rows, test_num_series), f"Shape does not match, {(n_rows, num_series)} is expected (current shape: {output.shape})."
+    assert isinstance(test_df, pd.DataFrame), f"Output should be a pd.DataFrame (current type: {type(test_df)})."
+    assert isinstance(test_df_w_min, pd.DataFrame), f"Output should be a pd.DataFrame regardless of `freq` (current type: {type(test_df_w_min)})."
+    assert test_df.shape == (test_n_rows, test_num_series), f"Shape does not match, {(n_rows, num_series)} is expected (current shape: {test_df.shape})."
+    assert test_df_w_min.shape == (test_n_rows, test_num_series), f"Shape does not match, {(n_rows, num_series)} is expected regardless of `freq` (current shape: {test_df_w_min.shape})."
 

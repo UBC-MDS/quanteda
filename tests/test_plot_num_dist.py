@@ -1,5 +1,6 @@
 import pytest
 import altair as alt
+import pandas as pd
 from quanteda.plot_num_dist import plot_num_dist
 
 
@@ -27,3 +28,25 @@ def test_plot_aggregate(input_daily_returns_df):
     """Check that the y axis represents a count"""
     test_plot = plot_num_dist(input_daily_returns_df)
     assert test_plot.to_dict()['spec']['encoding']['y']['aggregate'] == 'count', "The y-axis does not represent a count"
+
+def test_subplot_num(input_daily_returns_df):
+    """Check that the number of subplots match number of numeric features"""
+    test_plot = plot_num_dist(input_daily_returns_df)
+    assert len(test_plot.to_dict()['repeat']) == 9, "The number of subplots is not 3"
+
+def test_plot_dims(input_daily_returns_df):
+    """Check that the size of the plot is as expected"""
+    test_plot = plot_num_dist(input_daily_returns_df)
+    assert test_plot.to_dict()['spec']['height'] == 125, "The height of the plot is not 125"
+    assert test_plot.to_dict()['spec']['width'] == 125, "The width of the plot is not 125"
+
+def test_for_dataframe():
+    """Checking if the input is a dataframe or not."""
+    with pytest.raises(AssertionError, match="dataset must be a pandas DataFrame"):
+        plot_num_dist(123)
+
+def test_for_numeric_dataframe():
+    """Checking if the dataframe has numeric columns."""
+    with pytest.raises(AssertionError, match="dataset has no numeric features"):
+        plot_num_dist(pd.DataFrame({'col1': ['a', 'b'], 'col2': ['a', 'b']}))
+
