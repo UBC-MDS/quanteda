@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "quanteda"
-version = "2.0.12r"
+version = "3.0.0"
 description = "Perform exploratory data analysis (EDA) on quantitative data."
 authors = ["Doris (Yun Yi) Cai, Jake Barnabe, John Shiu, Merete Lutz"]
 license = "MIT"

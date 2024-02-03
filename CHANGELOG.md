@@ -2,6 +2,24 @@
 
 
 
+## v3.0.0 (2024-02-03)
+
+### Breaking
+
+* feat!: release 3.0.0
+BREAKING CHANGES: finished the requirements of milestone 4, and ready to submit ([`8cab63c`](https://github.com/UBC-MDS/quanteda/commit/8cab63c0244fc00fcfc495a8840d895240453147))
+
+### Unknown
+
+* Merge pull request #101 from UBC-MDS/release
+
+feat!: release 3.0.0 ([`fd6739c`](https://github.com/UBC-MDS/quanteda/commit/fd6739c33794963c0ab34ee47543ac2f00c6e76d))
+
+* Merge pull request #99 from UBC-MDS/adjust_readme
+
+adjusted the README a little bit ([`adf5e05`](https://github.com/UBC-MDS/quanteda/commit/adf5e05b948de571f4658b8c95a841412db80d3e))
+
+
 ## v2.0.12 (2024-02-02)
 
 ### Fix
@@ -15,6 +33,8 @@
 fix: Feedback addressed by adding a testing the edge case in plot_missing_vals ([`1e7e424`](https://github.com/UBC-MDS/quanteda/commit/1e7e424567b4e8c90b5ec5d545d3685ddb83d141))
 
 * Merge branch &#39;main&#39; into plot_missing_vals_tests_edit ([`853e2b7`](https://github.com/UBC-MDS/quanteda/commit/853e2b71f766c6725d9fc71c28430143aa817ff7))
+
+* adjusted the README a little bit ([`743d1e9`](https://github.com/UBC-MDS/quanteda/commit/743d1e9a3503ec435fa74027189020c28cfac50f))
 
 
 ## v2.0.11 (2024-02-02)
